@@ -196,3 +196,10 @@ If you use this tutorial in your research or teaching, please cite:
 }
 ```
 
+## Acknowledgments
+
+- Intel Corporation for providing the Intel Fortran compiler and oneAPI toolkit
+- GNU Project for the gfortran compiler and cross-platform compatibility
+- Fortran community for best practices and coding standards
+- Contributors and users who provide feedback and improvements
+
