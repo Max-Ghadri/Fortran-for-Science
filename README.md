@@ -154,113 +154,35 @@ Folder PATH listing
 
 ## 4.2. Quick Start
 
-### Step 1: **Clone and Navigate**
+1. **Clone the Repository**
 ```bash
-# Clone the repository
 git clone https://github.com/Max-Ghadri/Fortran-for-Science.git
 cd Fortran-for-Science
-
-# Verify repository structure
-ls -la
 ```
 
-### Step 2: **Install Intel Fortran Compiler**
-Follow the comprehensive installation guide in `compiler installation/ifort_Installation-Guide.md`:
+2. **Install Intel Fortran Compiler**
+Follow the detailed installation guide: [`compiler installation/ifort_Installation-Guide.md`](compiler%20installation/ifort_Installation-Guide.md)
 
+3. **Set Up Development Environment**
+- Open the project in Cursor/VS Code
+- Navigate to the `src/` directory to access Fortran source files
+- Review the documentation in the `docs/` directory for learning materials
+
+4. **Start Learning**
+- Read the tutorials in order: [`docs/1_FORTRAN_Main-Commands_Tutorial.md`](docs/1_FORTRAN_Main-Commands_Tutorial.md), [`docs/2_FORTRAN_Coding-Template_Tutorial.md`](docs/2_FORTRAN_Coding-Template_Tutorial.md), [`docs/3_FORTRAN_Run_a_Code_Tutorial.md`](docs/3_FORTRAN_Run_a_Code_Tutorial.md)
+- Practice with examples in the `src/` directory (see [`src/Readme.md`](src/Readme.md) for descriptions)
+
+5. **Compile and Run**
 ```bash
-# Download Intel OneAPI Base Toolkit
-wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/7deeaac4-f605-4bcf-a81b-ea7531577c61/l_BaseKit_p_2023.1.0.46401_offline.sh
-
-# Install Base Toolkit
-sudo sh ./l_BaseKit_p_2023.1.0.46401_offline.sh
-
-# Download Intel OneAPI HPC Toolkit
-wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/1ff1b38a-8218-4c53-9956-f0b264de35a4/l_HPCKit_p_2023.1.0.46346_offline.sh
-
-# Install HPC Toolkit
-sudo sh ./l_HPCKit_p_2023.1.0.46346_offline.sh
-
-# Install ZSH and Oh My Zsh
-sudo apt install git zsh -y
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
-# Configure environment
-echo 'source "/opt/intel/oneapi/compiler/2023.1.0/env/vars.sh" intel64' >> ~/.zshrc
-source ~/.zshrc
-
-# Verify installation
-ifort --version
-```
-
-### Step 3: **Set Up Development Environment**
-```bash
-# Open project in your preferred editor
-code .  # For VS Code
-# or
-cursor .  # For Cursor
-
-# Navigate to source directory
 cd src/
-
-# List available examples
-ls -la *.f90
+ifort -o program_name program_name.f90
+./program_name
 ```
 
-### Step 4: **Start with the Learning Path**
-Follow this recommended sequence:
-
-1. **Read Documentation** (in order):
-   - `docs/1_FORTRAN_Main-Commands_Tutorial.md` - Essential Fortran commands and syntax
-   - `docs/2_FORTRAN_Coding-Template_Tutorial.md` - Professional coding structure
-   - `docs/3_FORTRAN_Run_a_Code_Tutorial.md` - Compilation and execution
-
-2. **Practice with Examples** (in numerical order):
-   - `1_FORTRAN_Coding_Template.f90` - Basic program structure template
-   - `2_Write-Read-Variables_Types.f90` - Variable types and I/O operations
-   - `3_Readable_Code_Structure.f90` - Real-world scientific computing example
-   - `4_do-loop.f90` - Repetition structures and loops
-   - `5_If-then-else.f90` - Conditional statements
-   - `6_open-file.f90` - File I/O operations
-   - `7_Array.f90` - Array manipulation and operations
-
-### Step 5: **Compile and Run Your First Program**
-```bash
-# Navigate to source directory
-cd src/
-
-# Compile the coding template
-ifort -o template 1_FORTRAN_Coding_Template.f90
-
-# Run the program
-./template
-
-# Compile with optimization flags
-ifort -O2 -o template_optimized 1_FORTRAN_Coding_Template.f90
-
-# Run with timing
-time ./template_optimized
-```
-
-### Step 6: **Advanced Compilation Options**
-```bash
-# Compile with debugging information
-ifort -g -o program_debug program.f90
-
-# Compile with maximum optimization
-ifort -O3 -ipo -xHost -o program_fast program.f90
-
-# Compile with specific Fortran standard
-ifort -std=f2008 -o program_modern program.f90
-
-# Compile with OpenMP support
-ifort -qopenmp -o program_parallel program.f90
-```
-
-### Step 7: **Explore and Experiment**
-- **Modify Examples**: Change parameters in the source files to see different outputs
-- **Create New Programs**: Use the coding template as a starting point
-- **Test Different Compilers**: Compare ifort with gfortran performance
-- **Profile Performance**: Use timing commands to measure execution speed
+6. **Explore and Practice**
+- Work through examples in numerical order
+- Modify examples to experiment with different concepts
+- Use the coding template as a starting point for new programs
 
 ## 4.3. Troubleshooting
 
