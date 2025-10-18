@@ -1,8 +1,6 @@
 # FORTRAN Source Code Examples
 
-This directory contains practical FORTRAN programming examples that demonstrate key concepts and commands. Each file focuses on specific programming techniques to help you learn FORTRAN step by step.
-
-## The codes are set to introduce various applications of these commands.    
+This directory contains practical FORTRAN programming examples that demonstrate key concepts and commands. Each file focuses on specific programming techniques to help you learn FORTRAN step by step. The following examples cover essential FORTRAN programming topics:
 
 1. **FORTRAN Coding Template**: A Template for Programming    
 2. **Write Read Variables Types**: Examples of the Types of Tasks that can be Done with these Commands 
