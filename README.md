@@ -56,3 +56,22 @@ This repository provides a structured learning path for scientists and engineers
    ifort --version
    ```
 
+## Build & Run
+
+**Using Make (recommended)**:
+```bash
+make ex=07 run
+```
+
+**Manual compilation**:
+```bash
+ifort -o example examples/07-do-loop.f90
+./example
+```
+
+**Alternative with gfortran**:
+```bash
+gfortran -o example examples/07-do-loop.f90
+./example
+```
+
