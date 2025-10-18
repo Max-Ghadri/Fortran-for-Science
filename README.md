@@ -160,3 +160,11 @@ A: Set locale to use period as decimal separator: `export LC_NUMERIC=C` (Linux/m
 **Q: Line ending issues between Windows and Unix**
 A: Use `dos2unix` or `unix2dos` to convert line endings, or configure your editor to use consistent line endings.
 
+## Roadmap
+
+- **Derived Types**: User-defined data structures and type definitions
+- **Modules & Procedures**: Modular programming and procedure interfaces
+- **Array Intrinsics**: Advanced array operations and built-in functions
+- **Error Handling**: Comprehensive error checking and exception handling
+- **Unit Tests**: Automated testing framework for examples
+
