@@ -178,30 +178,7 @@ Contributions are welcome! Please follow these guidelines:
 - **Testing**: Ensure examples compile with both ifort and gfortran
 - **Documentation**: Update relevant documentation when adding new examples
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use this tutorial in your research or teaching, please cite:
-
-```bibtex
-@software{fortran_for_science,
-  title={Fortran-for-Science: A Hands-on Modern Fortran Tutorial},
-  author={Max Ghadri},
-  year={2024},
-  url={https://github.com/Max-Ghadri/Fortran-for-Science},
-  license={MIT}
-}
-```
-
-## Acknowledgments
-
-- Intel Corporation for providing the Intel Fortran compiler and oneAPI toolkit
-- GNU Project for the gfortran compiler and cross-platform compatibility
-- Fortran community for best practices and coding standards
-- Contributors and users who provide feedback and improvements
 
 ## Contact
 
