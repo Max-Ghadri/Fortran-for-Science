@@ -1,10 +1,10 @@
 
 
 <div align="center">
-    <img src="images/Fortran_banner.jpg" alt="FORTRAN Banner" width="30%">
+    <img src="images/Fortran_logo.png" alt="FORTRAN Banner" width="30%">
 </div>
 
-&nbsp;
+
 
 <h1 align="center">Fortran for Science</h1>
 
