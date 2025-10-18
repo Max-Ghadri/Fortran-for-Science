@@ -178,3 +178,7 @@ Contributions are welcome! Please follow these guidelines:
 - **Testing**: Ensure examples compile with both ifort and gfortran
 - **Documentation**: Update relevant documentation when adding new examples
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
