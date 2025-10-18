@@ -29,62 +29,32 @@ A hands-on Modern Fortran tutorial with Intel Fortran (ifort) featuring clean wo
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#prerequisites"><i><b>4. Prerequisites</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#getting-started"><i><b>4. Getting Started</b></i></a>
 </div>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#installation"><i><b>5. Installation</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#examples"><i><b>5. Examples</b></i></a>
 </div>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#build--run"><i><b>6. Build & Run</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#coding-standards--style"><i><b>6. Coding Standards & Style</b></i></a>
 </div>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#repository-structure"><i><b>7. Repository Structure</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#continuous-integration"><i><b>7. Continuous Integration</b></i></a>
 </div>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#examples"><i><b>8. Examples</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#roadmap"><i><b>8. Roadmap</b></i></a>
 </div>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#coding-standards--style"><i><b>9. Coding Standards & Style</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#tested-compilers--platforms"><i><b>10. Tested Compilers & Platforms</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#continuous-integration"><i><b>11. Continuous Integration</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#troubleshooting--faq"><i><b>12. Troubleshooting / FAQ</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#roadmap"><i><b>13. Roadmap</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contributing"><i><b>14. Contributing</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>15. Contact</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>9. Contact</b></i></a>
 </div>
 &nbsp;
 ---
@@ -160,97 +130,72 @@ Folder PATH listing
 │       README.md            <-- Project overview and documentation
 ```
 
-## Learning Path (Modules & Examples)
+# 4. Getting Started
 
-| Module | Documentation | Example Code | Concept |
-|--------|---------------|--------------|---------|
-| 0 | `ifort installation/ifort_Installation-Guide.md` | - | Intel Fortran compiler setup |
-| 1 | `docs/1_FORTRAN_Main-Commands_Tutorial.md` | - | Essential Fortran commands |
-| 2 | `docs/2_FORTRAN_Coding-Template_Tutorial.md` | - | Code structure and templates |
-| 3 | `docs/3_FORTRAN_Run_a_Code_Tutorial.md` | - | Compilation and execution |
-| 1 | - | `src/1_FORTRAN_Coding_Template.f90` | Basic program template |
-| 2 | - | `src/2_Write-Read-Variables_Types.f90` | Variable types and I/O |
-| 3 | - | `src/3_Readable_Code_Structure.f90` | Code organization |
-| 4 | - | `src/4_do-loop.f90` | Repetition structures |
-| 5 | - | `src/5_If-then-else.f90` | Conditional statements |
-| 6 | - | `src/6_open-file.f90` | File I/O operations |
-| 7 | - | `src/7_Array.f90` | Array manipulation |
+## 4.1. Prerequisites
 
-## Prerequisites
+Before you begin, ensure you have the following software and tools installed:
 
-- **Operating System**: Linux, macOS, or Windows
-- **Intel Fortran Compiler**: Intel oneAPI Base Toolkit with HPC Toolkit
-- **Alternative Compiler**: GNU Fortran (gfortran) for compatibility testing
-- **Basic Programming**: Familiarity with command-line operations
-- **Text Editor**: Any editor supporting Fortran syntax highlighting
+- **Linux Environment**: WSL2 (Windows Subsystem for Linux) or native Linux distribution
+- **Intel Fortran Compiler (ifort)**: Required for compiling and running the examples
+- **Git**: For cloning the repository and version control
+- **ZSH Shell**: Recommended shell with Oh My Zsh for enhanced terminal experience
+- **Text Editor**: VS Code, Cursor, or any editor with Fortran syntax highlighting
+- **Terminal Access**: Command-line interface for compilation and execution
 
-## Installation
+### Installation Requirements
+- **Intel OneAPI Base Toolkit**: Contains the Intel Fortran compiler
+- **Intel OneAPI HPC Toolkit**: Contains additional high-performance computing tools
+- **System Dependencies**: Git, ZSH, and basic Linux utilities
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Max-Ghadri/Fortran-for-Science.git
-   cd Fortran-for-Science
-   ```
+## 4.2. Quick Start
 
-2. **Install Intel Fortran Compiler**:
-   - Download Intel oneAPI Base Toolkit and HPC Toolkit
-   - Follow the installation guide in `ifort installation/ifort_Installation-Guide.md`
-   - Set up environment variables for your shell
+Follow these steps to get up and running with the Fortran for Science tutorial:
 
-3. **Verify installation**:
-   ```bash
-   ifort --version
-   ```
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/your-username/Fortran-for-Science.git
+cd Fortran-for-Science
+```
 
+### 2. **Install Intel Fortran Compiler**
+Follow the detailed installation guide in the `compiler installation/` directory:
+- Download and install Intel OneAPI Base Toolkit
+- Download and install Intel OneAPI HPC Toolkit  
+- Configure your shell environment (ZSH recommended)
+- Verify installation with `ifort --version`
 
+### 3. **Set Up Your Development Environment**
+- Open the project in your preferred editor (VS Code, Cursor, etc.)
+- Navigate to the `src/` directory to access Fortran source files
+- Review the documentation in the `docs/` directory for learning materials
 
+### 4. **Start Learning**
+- Begin with `docs/1_FORTRAN_Main-Commands_Tutorial.md` for essential commands
+- Follow the coding template tutorial: `docs/2_FORTRAN_Coding-Template_Tutorial.md`
+- Learn to run code: `docs/3_FORTRAN_Run_a_Code_Tutorial.md`
+- Practice with examples in the `src/` directory
 
-## Examples
+### 5. **Compile and Run Examples**
+```bash
+# Navigate to source directory
+cd src/
 
-| Example File | Concept |
-|--------------|---------|
-| `src/1_FORTRAN_Coding_Template.f90` | Basic program structure and template |
-| `src/2_Write-Read-Variables_Types.f90` | Variable types, I/O operations |
-| `src/3_Readable_Code_Structure.f90` | Code organization and formatting |
-| `src/4_do-loop.f90` | Repetition structures and loops |
-| `src/5_If-then-else.f90` | Conditional statements and logic |
-| `src/6_open-file.f90` | File I/O operations and error handling |
-| `src/7_Array.f90` | Array declaration and manipulation |
+# Compile a Fortran program
+ifort -o program_name program_name.f90
 
-## Coding Standards & Style
+# Run the compiled program
+./program_name
+```
 
-- **Implicit None**: Always use `implicit none` to prevent implicit typing
-- **Variable Initialization**: Initialize all variables before use
-- **Modules & Interfaces**: Use explicit interfaces for better error checking
-- **Error-Checked I/O**: Always check `iostat` for file operations
-- **Deterministic Filenames**: Use `trim()` and `//` for string concatenation
-- **Single Purpose**: Each example demonstrates one specific concept
-- **Consistent Formatting**: Use consistent indentation and spacing
-- **Meaningful Names**: Use descriptive variable and function names
+### 6. **Explore and Practice**
+- Work through examples in numerical order (1_FORTRAN_Coding_Template.f90, 2_Write-Read-Variables.f90, etc.)
+- Modify examples to experiment with different concepts
+- Refer to the comprehensive documentation for detailed explanations
 
+**Note**: This tutorial assumes you're working in a Linux environment. For Windows users, WSL2 is recommended for the best experience with Intel Fortran compiler.
 
-## Continuous Integration
-
-This repository uses GitHub Actions to automatically compile all examples with gfortran on Ubuntu runners. The CI pipeline:
-
-- Compiles all Fortran examples in the `src/` directory
-- Runs on Ubuntu 20.04 with gfortran
-- Validates that all code examples are syntactically correct
-- Ensures cross-compiler compatibility
-
-
-
-## Roadmap
-
-- **Derived Types**: User-defined data structures and type definitions
-- **Modules & Procedures**: Modular programming and procedure interfaces
-- **Array Intrinsics**: Advanced array operations and built-in functions
-- **Error Handling**: Comprehensive error checking and exception handling
-- **Unit Tests**: Automated testing framework for examples
-
-
-
-# 6. Contact Information
+# 9. Contact Information
 
 For questions not addressed in the resources above, please connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn for personalized assistance.
 
