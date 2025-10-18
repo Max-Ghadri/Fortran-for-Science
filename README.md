@@ -122,3 +122,12 @@ Fortran-for-Science/
 - **Consistent Formatting**: Use consistent indentation and spacing
 - **Meaningful Names**: Use descriptive variable and function names
 
+## Tested Compilers & Platforms
+
+| Operating System | Intel Fortran | GNU Fortran | Status |
+|------------------|---------------|-------------|---------|
+| Ubuntu 20.04+ | ✅ | ✅ | Tested |
+| macOS 11+ | ✅ | ✅ | Tested |
+| Windows 10+ | ✅ | ✅ | Tested |
+| CentOS 7+ | ✅ | ✅ | Tested |
+
