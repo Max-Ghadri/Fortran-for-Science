@@ -140,3 +140,23 @@ This repository uses GitHub Actions to automatically compile all examples with g
 - Validates that all code examples are syntactically correct
 - Ensures cross-compiler compatibility
 
+## Troubleshooting / FAQ
+
+**Q: ifort command not found**
+A: Ensure Intel oneAPI environment is sourced. Run `source /opt/intel/oneapi/setvars.sh` (Linux/macOS) or use Intel oneAPI command prompt (Windows).
+
+**Q: Missing oneAPI environment variables**
+A: Set up environment variables by sourcing the Intel oneAPI setup script or using the Intel oneAPI command prompt.
+
+**Q: File permission errors on Linux/macOS**
+A: Ensure executable permissions: `chmod +x example` after compilation.
+
+**Q: PowerShell execution policy errors on Windows**
+A: Set execution policy: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+
+**Q: Locale decimal separator issues**
+A: Set locale to use period as decimal separator: `export LC_NUMERIC=C` (Linux/macOS).
+
+**Q: Line ending issues between Windows and Unix**
+A: Use `dos2unix` or `unix2dos` to convert line endings, or configure your editor to use consistent line endings.
+
