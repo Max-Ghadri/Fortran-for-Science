@@ -1,8 +1,12 @@
-# Fortran-for-Science
+
 
 <div align="center">
-    <img src="images/Fortran_banner.png" alt="FORTRAN Banner" width="25%">
+    <img src="images/Fortran_banner.jpg" alt="FORTRAN Banner" width="30%">
 </div>
+
+&nbsp;
+
+<h1 align="center">Fortran for Science</h1>
 
 A hands-on Modern Fortran tutorial with Intel Fortran (ifort) featuring clean workflow, consistent coding templates, and minimal runnable examples for scientific computing.
 
