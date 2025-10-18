@@ -134,66 +134,174 @@ Folder PATH listing
 
 ## 4.1. Prerequisites
 
-Before you begin, ensure you have the following software and tools installed:
+### System Requirements
+- **Operating System**: Linux (Ubuntu 18.04+ recommended) or WSL2 on Windows
+- **Architecture**: x86_64 (Intel/AMD 64-bit processors)
+- **Memory**: Minimum 4GB RAM (8GB+ recommended for large computations)
+- **Storage**: At least 10GB free space for Intel OneAPI installation
 
-- **Linux Environment**: WSL2 (Windows Subsystem for Linux) or native Linux distribution
-- **Intel Fortran Compiler (ifort)**: Required for compiling and running the examples
-- **Git**: For cloning the repository and version control
-- **ZSH Shell**: Recommended shell with Oh My Zsh for enhanced terminal experience
+### Essential Software
+- **Intel Fortran Compiler (ifort)**: Primary compiler for this tutorial
+  - Intel OneAPI Base Toolkit (2023.1.0 or later)
+  - Intel OneAPI HPC Toolkit (2023.1.0 or later)
+- **Git**: Version control and repository management
+- **ZSH Shell**: Enhanced shell with Oh My Zsh framework
 - **Text Editor**: VS Code, Cursor, or any editor with Fortran syntax highlighting
-- **Terminal Access**: Command-line interface for compilation and execution
+- **Terminal**: Command-line interface for compilation and execution
 
-### Installation Requirements
-- **Intel OneAPI Base Toolkit**: Contains the Intel Fortran compiler
-- **Intel OneAPI HPC Toolkit**: Contains additional high-performance computing tools
-- **System Dependencies**: Git, ZSH, and basic Linux utilities
+### Optional but Recommended Tools
+- **GNU Fortran (gfortran)**: Alternative compiler for comparison
+- **Make**: Build automation tool
+- **Valgrind**: Memory debugging and profiling
+- **GDB**: GNU debugger for troubleshooting
+
+### Development Environment Setup
+- **VS Code Extensions**: Fortran language support, Intel OneAPI toolkit
+- **Terminal Configuration**: ZSH with Oh My Zsh for enhanced productivity
+- **File Permissions**: Ensure proper read/write permissions for source files
 
 ## 4.2. Quick Start
 
-Follow these steps to get up and running with the Fortran for Science tutorial:
-
-### 1. **Clone the Repository**
+### Step 1: **Clone and Navigate**
 ```bash
-git clone https://github.com/your-username/Fortran-for-Science.git
+# Clone the repository
+git clone https://github.com/Max-Ghadri/Fortran-for-Science.git
 cd Fortran-for-Science
+
+# Verify repository structure
+ls -la
 ```
 
-### 2. **Install Intel Fortran Compiler**
-Follow the detailed installation guide in the `compiler installation/` directory:
-- Download and install Intel OneAPI Base Toolkit
-- Download and install Intel OneAPI HPC Toolkit  
-- Configure your shell environment (ZSH recommended)
-- Verify installation with `ifort --version`
+### Step 2: **Install Intel Fortran Compiler**
+Follow the comprehensive installation guide in `compiler installation/ifort_Installation-Guide.md`:
 
-### 3. **Set Up Your Development Environment**
-- Open the project in your preferred editor (VS Code, Cursor, etc.)
-- Navigate to the `src/` directory to access Fortran source files
-- Review the documentation in the `docs/` directory for learning materials
+```bash
+# Download Intel OneAPI Base Toolkit
+wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/7deeaac4-f605-4bcf-a81b-ea7531577c61/l_BaseKit_p_2023.1.0.46401_offline.sh
 
-### 4. **Start Learning**
-- Begin with `docs/1_FORTRAN_Main-Commands_Tutorial.md` for essential commands
-- Follow the coding template tutorial: `docs/2_FORTRAN_Coding-Template_Tutorial.md`
-- Learn to run code: `docs/3_FORTRAN_Run_a_Code_Tutorial.md`
-- Practice with examples in the `src/` directory
+# Install Base Toolkit
+sudo sh ./l_BaseKit_p_2023.1.0.46401_offline.sh
 
-### 5. **Compile and Run Examples**
+# Download Intel OneAPI HPC Toolkit
+wget https://registrationcenter-download.intel.com/akdlm/IRC_NAS/1ff1b38a-8218-4c53-9956-f0b264de35a4/l_HPCKit_p_2023.1.0.46346_offline.sh
+
+# Install HPC Toolkit
+sudo sh ./l_HPCKit_p_2023.1.0.46346_offline.sh
+
+# Install ZSH and Oh My Zsh
+sudo apt install git zsh -y
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+# Configure environment
+echo 'source "/opt/intel/oneapi/compiler/2023.1.0/env/vars.sh" intel64' >> ~/.zshrc
+source ~/.zshrc
+
+# Verify installation
+ifort --version
+```
+
+### Step 3: **Set Up Development Environment**
+```bash
+# Open project in your preferred editor
+code .  # For VS Code
+# or
+cursor .  # For Cursor
+
+# Navigate to source directory
+cd src/
+
+# List available examples
+ls -la *.f90
+```
+
+### Step 4: **Start with the Learning Path**
+Follow this recommended sequence:
+
+1. **Read Documentation** (in order):
+   - `docs/1_FORTRAN_Main-Commands_Tutorial.md` - Essential Fortran commands and syntax
+   - `docs/2_FORTRAN_Coding-Template_Tutorial.md` - Professional coding structure
+   - `docs/3_FORTRAN_Run_a_Code_Tutorial.md` - Compilation and execution
+
+2. **Practice with Examples** (in numerical order):
+   - `1_FORTRAN_Coding_Template.f90` - Basic program structure template
+   - `2_Write-Read-Variables_Types.f90` - Variable types and I/O operations
+   - `3_Readable_Code_Structure.f90` - Real-world scientific computing example
+   - `4_do-loop.f90` - Repetition structures and loops
+   - `5_If-then-else.f90` - Conditional statements
+   - `6_open-file.f90` - File I/O operations
+   - `7_Array.f90` - Array manipulation and operations
+
+### Step 5: **Compile and Run Your First Program**
 ```bash
 # Navigate to source directory
 cd src/
 
-# Compile a Fortran program
-ifort -o program_name program_name.f90
+# Compile the coding template
+ifort -o template 1_FORTRAN_Coding_Template.f90
 
-# Run the compiled program
-./program_name
+# Run the program
+./template
+
+# Compile with optimization flags
+ifort -O2 -o template_optimized 1_FORTRAN_Coding_Template.f90
+
+# Run with timing
+time ./template_optimized
 ```
 
-### 6. **Explore and Practice**
-- Work through examples in numerical order (1_FORTRAN_Coding_Template.f90, 2_Write-Read-Variables.f90, etc.)
-- Modify examples to experiment with different concepts
-- Refer to the comprehensive documentation for detailed explanations
+### Step 6: **Advanced Compilation Options**
+```bash
+# Compile with debugging information
+ifort -g -o program_debug program.f90
 
-**Note**: This tutorial assumes you're working in a Linux environment. For Windows users, WSL2 is recommended for the best experience with Intel Fortran compiler.
+# Compile with maximum optimization
+ifort -O3 -ipo -xHost -o program_fast program.f90
+
+# Compile with specific Fortran standard
+ifort -std=f2008 -o program_modern program.f90
+
+# Compile with OpenMP support
+ifort -qopenmp -o program_parallel program.f90
+```
+
+### Step 7: **Explore and Experiment**
+- **Modify Examples**: Change parameters in the source files to see different outputs
+- **Create New Programs**: Use the coding template as a starting point
+- **Test Different Compilers**: Compare ifort with gfortran performance
+- **Profile Performance**: Use timing commands to measure execution speed
+
+## 4.3. Troubleshooting
+
+### Common Installation Issues
+- **Permission Denied**: Use `sudo` for installation commands
+- **Environment Variables**: Ensure Intel OneAPI paths are properly set
+- **Shell Configuration**: Restart terminal after modifying `.zshrc`
+
+### Compilation Errors
+- **Syntax Errors**: Check Fortran syntax against documentation
+- **Missing Dependencies**: Verify all required libraries are installed
+- **Memory Issues**: Reduce array sizes or use dynamic allocation
+
+### Runtime Issues
+- **Segmentation Fault**: Check array bounds and uninitialized variables
+- **File I/O Errors**: Verify file permissions and paths
+- **Performance Issues**: Use compiler optimization flags
+
+### Getting Help
+- **Documentation**: Refer to `docs/` directory for detailed explanations
+- **Source Comments**: Read inline comments in example files
+- **Community**: Connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn
+
+## 4.4. Next Steps
+
+After completing the basic setup:
+1. **Master the Coding Template**: Understand the 11-step structure
+2. **Practice with Real Examples**: Work through the scientific computing example
+3. **Explore Advanced Topics**: Arrays, file I/O, and optimization
+4. **Build Your Own Projects**: Apply learned concepts to your research
+5. **Contribute**: Share improvements and new examples with the community
+
+**Note**: This tutorial is optimized for Linux environments. Windows users should use WSL2 for the best experience with Intel Fortran compiler and scientific computing workflows.
 
 # 9. Contact Information
 
