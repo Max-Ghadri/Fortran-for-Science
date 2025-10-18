@@ -203,3 +203,11 @@ If you use this tutorial in your research or teaching, please cite:
 - Fortran community for best practices and coding standards
 - Contributors and users who provide feedback and improvements
 
+## Contact
+
+- **Repository**: [https://github.com/Max-Ghadri/Fortran-for-Science](https://github.com/Max-Ghadri/Fortran-for-Science)
+- **Issues**: [GitHub Issues](https://github.com/Max-Ghadri/Fortran-for-Science/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Max-Ghadri/Fortran-for-Science/discussions)
+
+For questions, suggestions, or contributions, please use the GitHub Issues or Discussions sections.
+
