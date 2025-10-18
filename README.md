@@ -168,3 +168,13 @@ A: Use `dos2unix` or `unix2dos` to convert line endings, or configure your edito
 - **Error Handling**: Comprehensive error checking and exception handling
 - **Unit Tests**: Automated testing framework for examples
 
+## Contributing
+
+Contributions are welcome! Please follow these guidelines:
+
+- **Pull Requests**: Submit PRs for new examples or documentation improvements
+- **One Concept Per Example**: Each example should demonstrate a single, clear concept
+- **Clear Comments**: Include comprehensive comments explaining the code
+- **Testing**: Ensure examples compile with both ifort and gfortran
+- **Documentation**: Update relevant documentation when adding new examples
+
