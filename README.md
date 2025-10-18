@@ -8,9 +8,6 @@
 
 <h1 align="center">Fortran for Science</h1>
 
-A hands-on Modern Fortran tutorial with Intel Fortran (ifort) featuring clean workflow, consistent coding templates, and minimal runnable examples for scientific computing.
-
----
 ***Table of Contents***
 ---
 <div>
@@ -57,6 +54,7 @@ A hands-on Modern Fortran tutorial with Intel Fortran (ifort) featuring clean wo
   &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>9. Contact</b></i></a>
 </div>
 &nbsp;
+
 ---
 
 # 1. About This Repository
@@ -71,16 +69,13 @@ This tutorial is designed for:
 - **Software Developers**: Professionals transitioning from other languages to Fortran for high-performance computing
 - **Computational Researchers**: Individuals working with numerical simulations, data analysis, or scientific modeling
 
-**Technical Expectations**: Basic familiarity with programming concepts and command-line operations. No prior Fortran experience is required, but some programming background is helpful.
-
 ## 1.2. What Will You Learn?
 
 By completing this tutorial, you will gain:
-- **Modern Fortran Fundamentals**: Understanding of Fortran 90/95/2003+ syntax and best practices
+- **Modern Fortran Fundamentals**: Understanding of Fortran syntax and best practices
 - **Scientific Computing Skills**: Practical experience with variables, arrays, loops, and file I/O operations
 - **Code Organization**: How to structure Fortran programs for readability and maintainability
-- **Compiler Proficiency**: Working with Intel Fortran (ifort) and GNU Fortran (gfortran) compilers
-- **Error Handling**: Implementing robust I/O operations with proper error checking
+- **Compiler Proficiency**: Installing and working with Intel Fortran (ifort) compiler
 - **Best Practices**: Following modern coding standards including implicit none, proper variable initialization, and clean code structure
 
 ## 1.3. Prerequisites
@@ -92,7 +87,7 @@ By completing this tutorial, you will gain:
 - **Recommended starting point**: Begin with the coding template tutorial and basic variable examples
 
 ### For users experienced with Fortran but new to modern standards:
-- Understanding of legacy Fortran (FORTRAN 77) concepts
+- Understanding of legacy Fortran concepts
 - Familiarity with compilation and execution processes
 - **Recommended starting point**: Focus on the modern coding standards and template sections
 
@@ -137,23 +132,20 @@ Folder PATH listing
 ### System Requirements
 - **Operating System**: Linux (Ubuntu 18.04+ recommended) or WSL2 on Windows
 - **Architecture**: x86_64 (Intel/AMD 64-bit processors)
-- **Memory**: Minimum 4GB RAM (8GB+ recommended for large computations)
+- **Memory**: Minimum 2GB RAM (4GB+ recommended for large computations)
 - **Storage**: At least 10GB free space for Intel OneAPI installation
 
 ### Essential Software
 - **Intel Fortran Compiler (ifort)**: Primary compiler for this tutorial
   - Intel OneAPI Base Toolkit (2023.1.0 or later)
   - Intel OneAPI HPC Toolkit (2023.1.0 or later)
+
+### Additional Recommended Tools
 - **Git**: Version control and repository management
 - **ZSH Shell**: Enhanced shell with Oh My Zsh framework
 - **Text Editor**: VS Code, Cursor, or any editor with Fortran syntax highlighting
 - **Terminal**: Command-line interface for compilation and execution
 
-### Optional but Recommended Tools
-- **GNU Fortran (gfortran)**: Alternative compiler for comparison
-- **Make**: Build automation tool
-- **Valgrind**: Memory debugging and profiling
-- **GDB**: GNU debugger for troubleshooting
 
 ### Development Environment Setup
 - **VS Code Extensions**: Fortran language support, Intel OneAPI toolkit
