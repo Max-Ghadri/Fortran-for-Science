@@ -131,3 +131,12 @@ Fortran-for-Science/
 | Windows 10+ | ✅ | ✅ | Tested |
 | CentOS 7+ | ✅ | ✅ | Tested |
 
+## Continuous Integration
+
+This repository uses GitHub Actions to automatically compile all examples with gfortran on Ubuntu runners. The CI pipeline:
+
+- Compiles all Fortran examples in the `examples/` directory
+- Runs on Ubuntu 20.04 with gfortran
+- Validates that all code examples are syntactically correct
+- Ensures cross-compiler compatibility
+
