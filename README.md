@@ -111,3 +111,14 @@ Fortran-for-Science/
 | `09-open-file.f90` | File I/O operations and error handling |
 | `10-array.f90` | Array declaration and manipulation |
 
+## Coding Standards & Style
+
+- **Implicit None**: Always use `implicit none` to prevent implicit typing
+- **Variable Initialization**: Initialize all variables before use
+- **Modules & Interfaces**: Use explicit interfaces for better error checking
+- **Error-Checked I/O**: Always check `iostat` for file operations
+- **Deterministic Filenames**: Use `trim()` and `//` for string concatenation
+- **Single Purpose**: Each example demonstrates one specific concept
+- **Consistent Formatting**: Use consistent indentation and spacing
+- **Meaningful Names**: Use descriptive variable and function names
+
