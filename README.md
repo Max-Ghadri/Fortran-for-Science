@@ -16,7 +16,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#11-who-is-this-tutorial-for">1.1. Who Is This Tutorial For?</a><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#12-what-will-you-learn">1.2. What Will You Learn?</a><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#13-prerequisites">1.3. Prerequisites</a><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#14-project-structure">1.4. Project Structure</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#14-contents-of-this-repository">1.4. Contents of this Repository</a><br>
   </div>
 </details>
 &nbsp;
@@ -81,7 +81,7 @@ By completing this tutorial, you will gain:
 - **Recommended starting point**: Start with the installation guide, then proceed through the tutorials in numerical order
 - **Additional resources**: Consider basic programming tutorials if needed before diving into Fortran-specific concepts
 
-## 1.4. Project Structure
+## 1.4. Contents of this Repository
 
 ```
 Folder PATH listing
@@ -153,7 +153,10 @@ Follow the detailed installation guide: [`compiler installation/ifort_Installati
 - Review the documentation in the `docs/` directory for learning materials
 
 4. **Start Learning**
-- Read the tutorials in order: [`docs/1_FORTRAN_Main-Commands_Tutorial.md`](docs/1_FORTRAN_Main-Commands_Tutorial.md), [`docs/2_FORTRAN_Coding-Template_Tutorial.md`](docs/2_FORTRAN_Coding-Template_Tutorial.md), [`docs/3_FORTRAN_Run_a_Code_Tutorial.md`](docs/3_FORTRAN_Run_a_Code_Tutorial.md)
+- Read the tutorials in order:
+  - [`docs/1_FORTRAN_Main-Commands_Tutorial.md`](docs/1_FORTRAN_Main-Commands_Tutorial.md) - Essential Fortran commands and syntax
+  - [`docs/2_FORTRAN_Coding-Template_Tutorial.md`](docs/2_FORTRAN_Coding-Template_Tutorial.md) - Code structure templates and best practices
+  - [`docs/3_FORTRAN_Run_a_Code_Tutorial.md`](docs/3_FORTRAN_Run_a_Code_Tutorial.md) - Compilation and execution guide
 - Practice with examples in the `src/` directory (see [`src/Readme.md`](src/Readme.md) for descriptions)
 
 5. **Compile and Run**
