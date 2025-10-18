@@ -1,6 +1,8 @@
-# Installing IFORT (Intel FORTRAN) on Linux
+# IFORT (Intel FORTRAN)
 
 IFORT (Intel FORTRAN) is a high-performance FORTRAN compiler developed by Intel that provides advanced optimization capabilities for scientific and engineering applications. It offers superior performance compared to GNU FORTRAN (gfortran) and includes specialized optimizations for Intel processors, making it an excellent choice for computationally intensive FORTRAN programs.
+
+# Installing IFORT (Intel FORTRAN) on Linux
 
 ## Step 1
 Open the terminal and **copy/paste/run** the following two commands to download and install the first part. Then, follow the visual instructions:
