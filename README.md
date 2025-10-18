@@ -30,3 +30,11 @@ This repository provides a structured learning path for scientists and engineers
 | 09 | - | `examples/09-open-file.f90` | File I/O operations |
 | 10 | - | `examples/10-array.f90` | Array manipulation |
 
+## Prerequisites
+
+- **Operating System**: Linux, macOS, or Windows
+- **Intel Fortran Compiler**: Intel oneAPI Base Toolkit with HPC Toolkit
+- **Alternative Compiler**: GNU Fortran (gfortran) for compatibility testing
+- **Basic Programming**: Familiarity with command-line operations
+- **Text Editor**: Any editor supporting Fortran syntax highlighting
+
