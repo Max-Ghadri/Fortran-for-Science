@@ -75,3 +75,27 @@ gfortran -o example examples/07-do-loop.f90
 ./example
 ```
 
+## Repository Structure
+
+```
+Fortran-for-Science/
+├── docs/                           # Documentation and tutorials
+│   ├── 00-ifort-installation.md   # Intel Fortran setup guide
+│   ├── 01-main-commands.md        # Essential Fortran commands
+│   ├── 02-coding-template.md      # Code structure guidelines
+│   └── 03-run-code.md             # Compilation and execution
+├── examples/                       # Fortran source code examples
+│   ├── 04-coding-template.f90     # Basic program template
+│   ├── 05-write-read-variables-types.f90
+│   ├── 06-readable-code-structure.f90
+│   ├── 07-do-loop.f90
+│   ├── 08-if-then-else.f90
+│   ├── 09-open-file.f90
+│   └── 10-array.f90
+├── ifort installation/             # Installation documentation
+│   └── 00_ifort_Installation-Guide.md
+├── src/                           # Legacy source files (to be reorganized)
+├── LICENSE                        # MIT License
+└── README.md                      # This file
+```
+
