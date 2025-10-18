@@ -14,3 +14,19 @@ This repository provides a structured learning path for scientists and engineers
 - **Scientific Computing**: Practical examples for variables, loops, conditionals, file I/O, and arrays
 - **Modern Standards**: Implicit none, error-checked I/O, and readable structure
 
+## Learning Path (Modules & Examples)
+
+| Module | Documentation | Example Code | Concept |
+|--------|---------------|--------------|---------|
+| 00 | `docs/00-ifort-installation.md` | - | Intel Fortran compiler setup |
+| 01 | `docs/01-main-commands.md` | - | Essential Fortran commands |
+| 02 | `docs/02-coding-template.md` | - | Code structure and templates |
+| 03 | `docs/03-run-code.md` | - | Compilation and execution |
+| 04 | - | `examples/04-coding-template.f90` | Basic program template |
+| 05 | - | `examples/05-write-read-variables-types.f90` | Variable types and I/O |
+| 06 | - | `examples/06-readable-code-structure.f90` | Code organization |
+| 07 | - | `examples/07-do-loop.f90` | Repetition structures |
+| 08 | - | `examples/08-if-then-else.f90` | Conditional statements |
+| 09 | - | `examples/09-open-file.f90` | File I/O operations |
+| 10 | - | `examples/10-array.f90` | Array manipulation |
+
