@@ -331,7 +331,11 @@ Contributions are welcome! Please follow these guidelines:
 
 
 
-## Contact
+# 6. Contact Information
+
+For questions not addressed in the resources above, please connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn for personalized assistance.
+
+## Additional Resources
 
 - **Repository**: [https://github.com/Max-Ghadri/Fortran-for-Science](https://github.com/Max-Ghadri/Fortran-for-Science)
 - **Issues**: [GitHub Issues](https://github.com/Max-Ghadri/Fortran-for-Science/issues)
