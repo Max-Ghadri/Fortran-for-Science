@@ -18,17 +18,17 @@ This repository provides a structured learning path for scientists and engineers
 
 | Module | Documentation | Example Code | Concept |
 |--------|---------------|--------------|---------|
-| 00 | `docs/00-ifort-installation.md` | - | Intel Fortran compiler setup |
-| 01 | `docs/01-main-commands.md` | - | Essential Fortran commands |
-| 02 | `docs/02-coding-template.md` | - | Code structure and templates |
-| 03 | `docs/03-run-code.md` | - | Compilation and execution |
-| 04 | - | `examples/04-coding-template.f90` | Basic program template |
-| 05 | - | `examples/05-write-read-variables-types.f90` | Variable types and I/O |
-| 06 | - | `examples/06-readable-code-structure.f90` | Code organization |
-| 07 | - | `examples/07-do-loop.f90` | Repetition structures |
-| 08 | - | `examples/08-if-then-else.f90` | Conditional statements |
-| 09 | - | `examples/09-open-file.f90` | File I/O operations |
-| 10 | - | `examples/10-array.f90` | Array manipulation |
+| 0 | `ifort installation/ifort_Installation-Guide.md` | - | Intel Fortran compiler setup |
+| 1 | `docs/1_FORTRAN_Main-Commands_Tutorial.md` | - | Essential Fortran commands |
+| 2 | `docs/2_FORTRAN_Coding-Template_Tutorial.md` | - | Code structure and templates |
+| 3 | `docs/3_FORTRAN_Run_a_Code_Tutorial.md` | - | Compilation and execution |
+| 1 | - | `src/1_FORTRAN_Coding_Template.f90` | Basic program template |
+| 2 | - | `src/2_Write-Read-Variables_Types.f90` | Variable types and I/O |
+| 3 | - | `src/3_Readable_Code_Structure.f90` | Code organization |
+| 4 | - | `src/4_do-loop.f90` | Repetition structures |
+| 5 | - | `src/5_If-then-else.f90` | Conditional statements |
+| 6 | - | `src/6_open-file.f90` | File I/O operations |
+| 7 | - | `src/7_Array.f90` | Array manipulation |
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ This repository provides a structured learning path for scientists and engineers
 
 2. **Install Intel Fortran Compiler**:
    - Download Intel oneAPI Base Toolkit and HPC Toolkit
-   - Follow the installation guide in `docs/00-ifort-installation.md`
+   - Follow the installation guide in `ifort installation/ifort_Installation-Guide.md`
    - Set up environment variables for your shell
 
 3. **Verify installation**:
@@ -60,18 +60,18 @@ This repository provides a structured learning path for scientists and engineers
 
 **Using Make (recommended)**:
 ```bash
-make ex=07 run
+make ex=4 run
 ```
 
 **Manual compilation**:
 ```bash
-ifort -o example examples/07-do-loop.f90
+ifort -o example src/4_do-loop.f90
 ./example
 ```
 
 **Alternative with gfortran**:
 ```bash
-gfortran -o example examples/07-do-loop.f90
+gfortran -o example src/4_do-loop.f90
 ./example
 ```
 
@@ -80,21 +80,22 @@ gfortran -o example examples/07-do-loop.f90
 ```
 Fortran-for-Science/
 ├── docs/                           # Documentation and tutorials
-│   ├── 00-ifort-installation.md   # Intel Fortran setup guide
-│   ├── 01-main-commands.md        # Essential Fortran commands
-│   ├── 02-coding-template.md      # Code structure guidelines
-│   └── 03-run-code.md             # Compilation and execution
-├── examples/                       # Fortran source code examples
-│   ├── 04-coding-template.f90     # Basic program template
-│   ├── 05-write-read-variables-types.f90
-│   ├── 06-readable-code-structure.f90
-│   ├── 07-do-loop.f90
-│   ├── 08-if-then-else.f90
-│   ├── 09-open-file.f90
-│   └── 10-array.f90
+│   ├── 1_FORTRAN_Main-Commands_Tutorial.md
+│   ├── 2_FORTRAN_Coding-Template_Tutorial.md
+│   └── 3_FORTRAN_Run_a_Code_Tutorial.md
+├── src/                           # Fortran source code examples
+│   ├── 1_FORTRAN_Coding_Template.f90
+│   ├── 2_Write-Read-Variables_Types.f90
+│   ├── 3_Readable_Code_Structure.f90
+│   ├── 4_do-loop.f90
+│   ├── 5_If-then-else.f90
+│   ├── 6_open-file.f90
+│   └── 7_Array.f90
 ├── ifort installation/             # Installation documentation
-│   └── 00_ifort_Installation-Guide.md
-├── src/                           # Legacy source files (to be reorganized)
+│   └── ifort_Installation-Guide.md
+├── images/                        # Documentation images
+│   ├── Fortran_Tutorial/          # Tutorial figures
+│   └── ifort_Installation/        # Installation screenshots
 ├── LICENSE                        # MIT License
 └── README.md                      # This file
 ```
@@ -103,13 +104,13 @@ Fortran-for-Science/
 
 | Example File | Concept |
 |--------------|---------|
-| `04-coding-template.f90` | Basic program structure and template |
-| `05-write-read-variables-types.f90` | Variable types, I/O operations |
-| `06-readable-code-structure.f90` | Code organization and formatting |
-| `07-do-loop.f90` | Repetition structures and loops |
-| `08-if-then-else.f90` | Conditional statements and logic |
-| `09-open-file.f90` | File I/O operations and error handling |
-| `10-array.f90` | Array declaration and manipulation |
+| `src/1_FORTRAN_Coding_Template.f90` | Basic program structure and template |
+| `src/2_Write-Read-Variables_Types.f90` | Variable types, I/O operations |
+| `src/3_Readable_Code_Structure.f90` | Code organization and formatting |
+| `src/4_do-loop.f90` | Repetition structures and loops |
+| `src/5_If-then-else.f90` | Conditional statements and logic |
+| `src/6_open-file.f90` | File I/O operations and error handling |
+| `src/7_Array.f90` | Array declaration and manipulation |
 
 ## Coding Standards & Style
 
@@ -135,7 +136,7 @@ Fortran-for-Science/
 
 This repository uses GitHub Actions to automatically compile all examples with gfortran on Ubuntu runners. The CI pipeline:
 
-- Compiles all Fortran examples in the `examples/` directory
+- Compiles all Fortran examples in the `src/` directory
 - Runs on Ubuntu 20.04 with gfortran
 - Validates that all code examples are syntactically correct
 - Ensures cross-compiler compatibility
