@@ -38,3 +38,21 @@ This repository provides a structured learning path for scientists and engineers
 - **Basic Programming**: Familiarity with command-line operations
 - **Text Editor**: Any editor supporting Fortran syntax highlighting
 
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Max-Ghadri/Fortran-for-Science.git
+   cd Fortran-for-Science
+   ```
+
+2. **Install Intel Fortran Compiler**:
+   - Download Intel oneAPI Base Toolkit and HPC Toolkit
+   - Follow the installation guide in `docs/00-ifort-installation.md`
+   - Set up environment variables for your shell
+
+3. **Verify installation**:
+   ```bash
+   ifort --version
+   ```
+
