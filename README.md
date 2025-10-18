@@ -26,7 +26,7 @@
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#getting-started"><i><b>4. Getting Started</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#getting-started"><i><b>2. Getting Started</b></i></a>
 </div>
 &nbsp;
 
@@ -51,7 +51,7 @@
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>9. Contact</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>3. Contact</b></i></a>
 </div>
 &nbsp;
 
@@ -125,9 +125,9 @@ Folder PATH listing
 │       README.md            <-- Project overview and documentation
 ```
 
-# 4. Getting Started
+# 2. Getting Started
 
-## 4.1. Prerequisites
+## 2.1. Prerequisites
 
 ### System Requirements
 - **Operating System**: Linux (Ubuntu 18.04+ recommended) or WSL2 on Windows
@@ -152,7 +152,7 @@ Folder PATH listing
 - **Terminal Configuration**: ZSH with Oh My Zsh for enhanced productivity
 - **File Permissions**: Ensure proper read/write permissions for source files
 
-## 4.2. Quick Start
+## 2.2. Quick Start
 
 1. **Clone the Repository**
 ```bash
@@ -184,7 +184,7 @@ ifort -o program_name program_name.f90
 - Modify examples to experiment with different concepts
 - Use the coding template as a starting point for new programs
 
-## 4.3. Troubleshooting
+## 2.3. Troubleshooting
 
 ### Common Installation Issues
 - **Permission Denied**: Use `sudo` for installation commands
@@ -204,9 +204,8 @@ ifort -o program_name program_name.f90
 ### Getting Help
 - **Documentation**: Refer to `docs/` directory for detailed explanations
 - **Source Comments**: Read inline comments in example files
-- **Community**: Connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn
 
-## 4.4. Next Steps
+## 2.4. Next Steps
 
 After completing the basic setup:
 1. **Master the Coding Template**: Understand the 11-step structure
@@ -217,7 +216,7 @@ After completing the basic setup:
 
 **Note**: This tutorial is optimized for Linux environments. Windows users should use WSL2 for the best experience with Intel Fortran compiler and scientific computing workflows.
 
-# 9. Contact Information
+# 3. Contact Information
 
 For questions not addressed in the resources above, please connect with [Mostafa Rezaee](https://www.linkedin.com/in/mostafa-rezaee/) on LinkedIn for personalized assistance.
 
