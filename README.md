@@ -10,51 +10,32 @@
 
 ***Table of Contents***
 ---
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#overview"><i><b>1. Overview</b></i></a>
-</div>
+<details>
+  <summary><a href="#1-about-this-repository"><i><b>1. About This Repository</b></i></a></summary>
+  <div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#11-who-is-this-tutorial-for">1.1. Who Is This Tutorial For?</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#12-what-will-you-learn">1.2. What Will You Learn?</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#13-prerequisites">1.3. Prerequisites</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#14-project-structure">1.4. Project Structure</a><br>
+  </div>
+</details>
+&nbsp;
+
+<details>
+  <summary><a href="#2-getting-started"><i><b>2. Getting Started</b></i></a></summary>
+  <div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#21-prerequisites">2.1. Prerequisites</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#22-quick-start">2.2. Quick Start</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#23-troubleshooting">2.3. Troubleshooting</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#24-next-steps">2.4. Next Steps</a><br>
+  </div>
+</details>
 &nbsp;
 
 <div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#key-features"><i><b>2. Key Features</b></i></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3-contact-information"><i><b>3. Contact Information</b></i></a>
 </div>
 &nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#learning-path-modules--examples"><i><b>3. Learning Path (Modules & Examples)</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#getting-started"><i><b>2. Getting Started</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#examples"><i><b>5. Examples</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#coding-standards--style"><i><b>6. Coding Standards & Style</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#continuous-integration"><i><b>7. Continuous Integration</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#roadmap"><i><b>8. Roadmap</b></i></a>
-</div>
-&nbsp;
-
-<div>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact"><i><b>3. Contact</b></i></a>
-</div>
-&nbsp;
-
 ---
 
 # 1. About This Repository
