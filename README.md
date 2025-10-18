@@ -99,3 +99,15 @@ Fortran-for-Science/
 └── README.md                      # This file
 ```
 
+## Examples
+
+| Example File | Concept |
+|--------------|---------|
+| `04-coding-template.f90` | Basic program structure and template |
+| `05-write-read-variables-types.f90` | Variable types, I/O operations |
+| `06-readable-code-structure.f90` | Code organization and formatting |
+| `07-do-loop.f90` | Repetition structures and loops |
+| `08-if-then-else.f90` | Conditional statements and logic |
+| `09-open-file.f90` | File I/O operations and error handling |
+| `10-array.f90` | Array declaration and manipulation |
+
